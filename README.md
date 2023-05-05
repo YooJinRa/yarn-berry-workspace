@@ -111,3 +111,50 @@ yarn add typescript
 
 - 루트에서 다음 명령어를 실행
   - `yarn workspace @project/web add @project/lib`
+
+---
+
+### Monorepo란?
+
+- 여러 개의 개별 프로젝트를, 잘 정의된 관계를 통해서 하나의 Repo에 담은 것
+- https://news.hada.io/topic?id=6061
+
+### Monorepo 장단점
+
+#### 장점
+
+- 내가 담당하는 프로젝트가 아니라도 개선의 여지가 있다면 자유롭게 수정 가능
+- 다른 사람의 코드에 자주 기웃거릴수 있음
+- 내가 알지 못했던 Official Document API를 통해서 문제를 더 깔끔하게 해결 가능.
+- 동료들간의 상호작용으로 기술적 비지니스적 성장 할 기회가 많이 열림
+
+#### 단점
+
+- 개발환경을 구성하는데 투자필요
+- 코드 관리의 어려움 (코드 소유권 어떻게?)
+- 대규모 리팩토링이 쉬워지는게 장점이자, 단점
+
+```
+구글의 경우 매일 모노리포에 4만 5,000건 이상의 변경이 이뤄진다. 애플리케이션의 개발자 수가 증가하고 애플리케이션 내 구성 요소의 수가 확대됨에 따라 오버헤드에서 기하급수적인 문제가 된다.
+
+원문보기:
+https://www.itworld.co.kr/insight/214234#csidx6c5414e0caa383f937b71490000fcac
+```
+
+- 생각해보기 : https://news.hada.io/topic?id=7839
+
+### Monorepo를 개발하는 경우
+
+1. Library 개발
+
+- 예시 : https://github.com/babel/babel
+
+2. 디자인시스템 관리
+
+- 예시 : https://github.com/radix-ui/primitives
+
+3. B2C, B2B, admin을 하나로 관리
+
+4. Monolith -> Microservice
+
+- 참고자료 : (토스) https://speakerdeck.com/raon0211/toseuyi-maikeuropeuronteuendeu-akitegceo-geurigo-jadonghwa
