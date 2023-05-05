@@ -132,6 +132,7 @@ yarn add typescript
 
 - 개발환경을 구성하는데 투자필요
 - 코드 관리의 어려움 (코드 소유권 어떻게?)
+  - github에서 코드 소유자 설정 가능 : https://docs.github.com/ko/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
 - 대규모 리팩토링이 쉬워지는게 장점이자, 단점
 
 ```
